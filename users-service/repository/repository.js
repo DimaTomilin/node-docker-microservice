@@ -1,13 +1,8 @@
-//  repository.js
-//
-//  Exposes a single function - 'connect', which returns
-//  a connected repository. Call 'disconnect' on this object when you're done.
+
 'use strict';
 
-var mysql = require('mysql');
+var mysql = require('mysql2');
 
-//  Class which holds an open connection to a repository
-//  and exposes some simple functions for accessing data.
 class Repository {
   constructor(connection) {
     this.connection = connection;
